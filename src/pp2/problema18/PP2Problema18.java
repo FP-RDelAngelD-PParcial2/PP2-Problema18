@@ -39,10 +39,12 @@ public class PP2Problema18 {
         int numeromenor, d, divisor; //Declaracion de variables
         d=1; //Debe ser 1 ya que si es 0 se elimina el divisor
         divisor=2; //Comienza en 2 ya que es lo minimo en lo que se pueden dividir (media)
-        if(a>b){ //Se necesita conocer el numero menor para saber en cuanto se puede dividir //2>8
-            numeromenor=b; //Si a es mayor que b, b es el numero menor //FALSO
+        if(b>a && c>a){ //Se necesita conocer el numero menor para saber en cuanto se puede dividir //8>4>6
+            numeromenor=a; //Si a es mayor que b, b es el numero menor //FALSO
+        }else if(a>b && c>b){
+            numeromenor=b; //Sino el numero menor es a //numeromenor=8
         }else{
-            numeromenor=a; //Sino el numero menor es a //numeromenor=8
+            numeromenor=c;
         }
         while(numeromenor>=divisor){ //Mientras que el numero menor sea mayor o igual al divisor, //8>=2 VERDADERO
             if(a%divisor==0 && b%divisor==0 && c%divisor==0){ //Si el residuo de la division de a entre el divisor es 0 //2%2==0 && 8%2==0
