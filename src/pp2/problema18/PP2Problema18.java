@@ -15,11 +15,7 @@ public class PP2Problema18 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int n1, n2, n3;
-        n1=verificarNumero("numero 1 ");
-        n2=verificarNumero("numero 2 ");
-        n3=verificarNumero("numero 3 ");
-        minimoComunD(n1, n2, n3);
+        minimoComunD();
     }
      public static int solicitarDatos(String d){ //Solicita datos
         int miDato;
@@ -35,10 +31,15 @@ public class PP2Problema18 {
         }while(a<=0);//Mientras que a sea menor o igual que 0
         return a; //Regresa el valor de a
     }
-    public static void minimoComunD(int a, int b, int c){
+    public static void minimoComunD(){
         int numeromaximo, d, divisor; //Declaracion de variables
+        int a, b, c;
         d=1; //Debe ser 1 ya que si es 0 se elimina el divisor
         divisor=2; //Comienza en 2 ya que es lo minimo en lo que se pueden dividir (media)
+        a=verificarNumero("numero 1 ");
+        b=verificarNumero("numero 2 ");
+        c=verificarNumero("numero 3 ");        
+        
         //a=4, b=6, c=2
         if(b<a && c<a){ //Se necesita conocer el numero mayor //6<4 && 2<4
             numeromaximo=a; //Si b es menor que a, y c es menor que a, a es el numero mayor //FALSO
