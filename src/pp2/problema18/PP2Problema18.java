@@ -52,7 +52,7 @@ public class PP2Problema18 {
                                                               //el residuo de la division de b entre el divisor es igual a 0 o //6%2==0 VERDADERO
                                                               //el residuo de la division de c entre el divisor es igual a 0 o //2%2==0 VERDADERO
                                                               //La condicion sera verdadera y //VERDADERO
-                d=d*divisor; //se multiplicara el valor de d por el divisor //d=1*2 d=2
+                d=d*divisor; //se multiplicara el valor de d por el divisor //d=1*2 d=2 //2*2=4 //4*3=12
                 if(a%divisor==0){ //Si el residuo de la division de a entre el divisor es igual a 0 //4%2==0 VERDADERO
                     a=a/divisor;//a sera igual a la division de a entre el divisor //a=4/2 a=2
                 }
